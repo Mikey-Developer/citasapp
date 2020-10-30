@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Citas</string>
+    <string name="navigation_drawer_open">abrir menu</string>
+    <string name="navigation_drawer_close">Cerrar menu</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Top</string>
+    <string name="action_settings">condfiguraciones</string>
+
+    <string name="menu_home">Menu</string>
+    <string name="menu_gallery">Citas</string>
+    <string name="menu_slideshow">Confirmacion</string>
+
+    <!-- Citas  -->
+    <string name="vwtituloCitas">Citas App</string>
+    <string name="vwnombreDoctor">Nombre Doctor:</string>
+    <string name="vwEspecialidad">Servicio: </string>
+    <string name="vwHospital">Clinica:</string>
+    <string name="vwDia">Dia:</string>
+    <string name="vwHorario">Horario:</string>
+    <string name="lblnombreDoctor">Nombre del doctor</string>
+    <string name="lblnombreEspcialidad">Especialidad del doctor</string>
+    <string name="lblnombreHopital">Nombre del hospital</string>
+    <string name="lblHora">Hora</string>
+    <string name="lblDia">Dia</string>
+    <!-- Botton enviar  infromacion-->
+    <string name="btnSiguiente">Crear Cita</string>
+
+    <!-- Confirmacion -->
+    <string name="viewtituloConfirmacion">Confirmacion de Cita</string>
+</resources>

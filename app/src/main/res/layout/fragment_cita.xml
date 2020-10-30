@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.daa.citas.ui.cita.CitaFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/vwtituloCitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="161dp"
+        android:gravity="center"
+        android:text="@string/vwtituloCitas"
+        android:textColor="#628F80"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vwIDCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="ID Cita"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/vwnombreDoctor"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <TextView
+        android:id="@+id/vwnombreDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/vwnombreDoctor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vwEspecialidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="25dp"
+        android:text="@string/vwEspecialidad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vwnombreDoctor" />
+
+    <TextView
+        android:id="@+id/vwHospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:text="@string/vwHospital"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vwEspecialidad" />
+
+    <TextView
+        android:id="@+id/vwDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="25dp"
+        android:text="@string/vwDia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vwHospital" />
+
+    <TextView
+        android:id="@+id/vwHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:text="@string/vwHorario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vwDia" />
+
+
+    <EditText
+        android:id="@+id/edtIDCita"
+        android:layout_width="163dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtNombreDoctor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toEndOf="@+id/vwIDCita" />
+
+    <TextView
+        android:id="@+id/vwDescriipcion"
+        android:layout_width="94dp"
+        android:layout_height="41dp"
+        android:text="-"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/edtIDCita"
+        app:layout_constraintTop_toBottomOf="@+id/vwtituloCitas"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <EditText
+        android:id="@+id/edtNombreDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwnombreDoctor"
+        app:layout_constraintStart_toEndOf="@+id/vwnombreDoctor"
+        app:layout_constraintTop_toTopOf="@+id/vwnombreDoctor"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <EditText
+        android:id="@+id/edtServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwEspecialidad"
+        app:layout_constraintStart_toEndOf="@+id/vwEspecialidad"
+        app:layout_constraintTop_toTopOf="@+id/vwEspecialidad"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <EditText
+        android:id="@+id/edtEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwHospital"
+        app:layout_constraintStart_toEndOf="@+id/vwHospital"
+        app:layout_constraintTop_toTopOf="@+id/vwHospital"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <EditText
+        android:id="@+id/edtDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwDia"
+        app:layout_constraintStart_toEndOf="@+id/vwDia"
+        app:layout_constraintTop_toTopOf="@+id/vwDia" />
+
+    <EditText
+        android:id="@+id/edtHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwHorario"
+        app:layout_constraintStart_toEndOf="@+id/vwHorario"
+        app:layout_constraintTop_toTopOf="@+id/vwHorario" />
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:text="@string/btnSiguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtHorario"
+        app:layout_constraintVertical_bias="0.145" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
